@@ -67,18 +67,12 @@ source zipenv/bin/activate
 pip install pyzipper
 ```
 
-## Step 3: Create a Working Directory
-```bash
-mkdir ~/zip_bruteforce
-cd ~/zip_bruteforce
-```
-
-## Step 4: Create a Password-Protected ZIP File
+## Step 3: Create a Password-Protected ZIP File
 ```bash
 zip -e archive.zip secret.txt #Set a known password (e.g. secret123)
 ```
 
-## Step 5: Run the script:
+## Step 4: Run the script:
 ```bash
 python3 zipbrute.py -z archive.zip -p passlist.txt
 ```
